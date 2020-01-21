@@ -6,7 +6,7 @@ Instalação
 
 
 Criando o container Docker
-git clone https://github.com/sandrocnrj/ambiente-api-contato.git
+git clone --recursive https://github.com/sandrocnrj/ambiente-api-contato.git
 
 O comando acima fará o clone do ambiente em docker e do projeto API de Contatos
 
