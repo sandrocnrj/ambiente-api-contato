@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "230f0037-5e20-4223-87b4-6ab7e96f5f7a",
+		"name": "API Contatos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://0.0.0.0:5000/v1/authenticate",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sandro",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/authenticate",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1/contatos?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/contatos?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"contatos"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1/contatos?nome=S&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/contatos?nome=S&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"contatos"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "S"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNhbmRybyIsImV4cCI6MTU3OTY1NzAwNX0.p6BzOuLBqkbXC-fLzF4rXKbnIqTRQ8Cii1AsMnlXdvY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1/contatos/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"sandro\",\n  \"password\": \"123456\",\n  \"nome\": \"Sandro Carvalho\",\n  \"canal\": \"email\",\n\t\"valor\": \"teste@gmail.com\",\n  \"obs\": \"nada a declarar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/contatos/1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"contatos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1/contatos/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/contatos/1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"contatos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/v1/contatos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"sandro\",\n  \"password\": \"123456\",\n  \"nome\": \"Sandro Carvalho\",\n  \"canal\": \"email\",\n\t\"valor\": \"teste@gmail.com\",\n  \"obs\": \"nada a declarar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/v1/contatos",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"contatos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
